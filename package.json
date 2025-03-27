@@ -2,14 +2,11 @@
   "name": "live-dashboard-with-backend",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
-  "engines": {
-    "node": "16.x"
-  },
+  "type": "module",  // Ensure this line is present
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "node-fetch": "^3.3.2"
   },
   "scripts": {
