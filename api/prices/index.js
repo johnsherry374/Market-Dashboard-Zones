@@ -18,6 +18,9 @@ export default async function handler(req, res) {
   try {
     const results = await Promise.all(
       symbols.map(async ({ symbol, code }) => {
+       const response = await fetch(
+  `https://api.twelvedata.com/time_series?symbol=${symbol}&interval=1h&apikey=${apiKey}`
+); 
         const response = await fetch(
           `https://api.twelvedata.com/time_series?symbol=${code}&interval=1h&outputsize=500&apikey=${apiKey}`
         );
