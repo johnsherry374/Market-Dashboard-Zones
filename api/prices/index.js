@@ -1,5 +1,4 @@
-import fetch from 'node-fetch';
-
+const fetch = require('node-fetch');
 const symbols = [
     { symbol: 'XAU/USD', code: 'XAU/USD' },
     { symbol: 'XAG/USD', code: 'XAG/USD' },
