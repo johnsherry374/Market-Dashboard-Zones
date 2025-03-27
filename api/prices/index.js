@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     { symbol: 'S&P 500', code: 'SPX' },
   ];
 
-  const apiKey = '28c16fa1e508453aa2d3d66eb7b5caa0';
+  const apiKey = process.env.TWELVE_API_KEY;
 
   try {
     const results = await Promise.all(
